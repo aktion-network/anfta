@@ -4,7 +4,7 @@
     "dev:tailwind": "npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch",
     "build:eleventy": "ELEVENTY_PRODUCTION=true eleventy",
     "build:tailwind": "npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --minify",
-    "build": "NODE_ENV=production npm-run-all build:tailwind build:eleventy",
+    "build": "NODE_ENV=production npm-run-all build:eleventy build:tailwind",
     "start": "npm-run-all --parallel dev:*"
   },
   "devDependencies": {
