@@ -20,11 +20,6 @@ module.exports = function (eleventyConfig) {
     return now
   })
 
-  eleventyConfig.addShortcode("addGenerator", () => {
-    return `<meta name="generator" content="Eleventy - 11ty - https://11ty.dev - v${require(`@11ty/eleventy/package.json`).version}">`;
-  });
-  
-
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&

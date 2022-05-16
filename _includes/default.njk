@@ -49,7 +49,7 @@
     <meta name="msapplication-TileColor" content="#0d0d0d">
     <meta name="theme-color" content="#ffffff">
 
-    {% addGenerator %}
+    <meta name="generator" content="{{ eleventy.generator }}">
 
     {% block head %}{% endblock %}
     <script defer src="/js/alpine.js?v={% version %}"></script>
